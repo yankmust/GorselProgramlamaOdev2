@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GorselProgramlamaOdev2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GorselProgramlamaOdev2"
+    Shell.FlyoutBehavior="Flyout">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+         <ShellContent
+             Icon="homepage.png"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent
+            Icon="money.png"
+    Title="Currency Exchanges"
+    ContentTemplate="{DataTemplate local:Currencies}"
+    Route="Currencies" /> 
+        <ShellContent
+            Icon="news.png"
+    Title="TRT News"
+    ContentTemplate="{DataTemplate local:TRTNews}"
+    Route="TRTNews" />
+        <ShellContent
+            Icon="weather.png"
+    Title="Weather"
+    ContentTemplate="{DataTemplate local:Weather}"
+    Route="Weather" /> 
+        <ShellContent
+            Icon="list.png"
+    Title="To Do List"
+    ContentTemplate="{DataTemplate local:ToDoList}"
+    Route="ToDoList" />
+        <ShellContent
+            Icon="setting.png"
+    Title="Switch Mode"
+    ContentTemplate="{DataTemplate local:ModeSwitch}"
+    Route="ModeSwitch" />
+        
+        
+        
+    </FlyoutItem>
+</Shell>
+   
+    
+   

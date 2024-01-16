@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev2.Currencies"
+             Title="Currencies">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="Title"
+                HorizontalOptions="Center"
+                Text="Currency Exchanges" TextColor="CornflowerBlue" />
+            <Grid Padding="5,0" ColumnDefinitions=".1*,.2*,.4*,.2*,.2*">
+                <Label
+            Grid.Column="0"
+            FontSize="Medium"
+            FontAttributes="Italic"
+            Text="Unit"
+            TextColor="OrangeRed"        
+           VerticalOptions="Center" />
+                        <Label
+            Grid.Column="1"
+            FontSize="Medium"
+            FontAttributes="Italic"                
+            Text="Currency Code"
+            TextColor="OrangeRed"                
+            VerticalOptions="Center" />
+                        <Label
+            Grid.Column="2"
+            FontAttributes="Italic"
+            FontSize="Medium"
+            Text="Currency Name"
+            TextColor="OrangeRed"                
+            VerticalOptions="Center" />
+                        <Label
+            Grid.Column="3"
+            FontSize="Medium"
+            FontAttributes="Italic"                
+            Text="Forex Buying"
+            TextColor="OrangeRed"                
+            VerticalOptions="Center" />
+                <Label
+            Grid.Column="4"
+            FontSize="Medium"
+            Text="Forex Selling"
+            TextColor="OrangeRed"        
+            FontAttributes="Italic"        
+            VerticalOptions="Center" />
+            </Grid>
+
+            <CollectionView x:Name="collectionView" ItemsSource="{Binding Data.Currency}" ItemsUpdatingScrollMode="KeepLastItemInView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="5"
+                            Padding="5"
+                            BorderColor="LightBlue"
+                            CornerRadius="10">
+                            <Grid Padding="5,0" ColumnDefinitions=".1*,.2*,.4*,.2*,.2*">
+                                <Label
+                                    Grid.Column="0"
+                                    FontSize="Body"
+                                    Text="{Binding Unit}"
+                                    TextColor="GhostWhite"
+                                   VerticalOptions="Center" />
+                                <Label
+                                    Grid.Column="1"
+                                    FontAttributes="Bold"
+                                    FontSize="Body"
+                                    Text="{Binding Kod}"
+                                    TextColor="GhostWhite"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Grid.Column="2"
+                                    FontAttributes="Italic"
+                                    FontSize="Small"
+                                    Text="{Binding CurrencyName}"
+                                    TextColor="GhostWhite"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Grid.Column="3"
+                                    FontSize="Body"
+                                    Text="{Binding ForexBuying}"
+                                    FontAttributes="Bold"
+                                    TextColor="Green"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Grid.Column="4"
+                                    FontSize="Body"
+                                    Text="{Binding ForexSelling}"
+                                    FontAttributes="Bold"
+                                    TextColor="Red"
+                                    VerticalOptions="Center" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

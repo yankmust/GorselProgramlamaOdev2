@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev2.MainPage">
+
+    <Grid ColumnDefinitions="*" RowDefinitions="Auto,Auto,Auto,Auto,Auto" Padding="20">
+        <StackLayout>
+         <Label Text="ÖDEV-2" FontSize="40"  HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="1"/>   
+        <Image Source="pp2.png" Margin="10"  Aspect="AspectFit" WidthRequest="200" HeightRequest="200" Grid.RowSpan="2" />
+        <Label Text="Yankı Muştu" FontSize="30" HorizontalOptions="Center" VerticalOptions="Center"
+           Grid.RowSpan="3"/>
+            <Label Text="21010310071" FontSize="30" HorizontalOptions="Center" VerticalOptions="Center"
+   Grid.RowSpan="4"/>
+            <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği Bölümü" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="5"/>
+        
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>

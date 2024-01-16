@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev2.ModeSwitch"
+             Title="ModeSwitch">
+    
+    <StackLayout><Frame Padding="10" CornerRadius="15"  BackgroundColor="Purple"  >
+        <Grid ColumnDefinitions="*,*" >
+            <Label Grid.Column="0" Text="Switch Color Theme" TextColor="OrangeRed" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            
+                
+
+        <Switch Grid.Column="1" x:Name="themeSwitch" Toggled="OnThemeSwitchToggled"  />
+            
+                
+            
+        </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>
