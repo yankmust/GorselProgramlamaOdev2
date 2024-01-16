@@ -9,7 +9,7 @@ using Firebase.Database.Query;
 
 namespace GorselProgramlamaOdev2
 {
-    // New class to represent a task with additional details
+    
     public class TaskItem
     {
         public string Key { get; set; }
@@ -31,10 +31,10 @@ namespace GorselProgramlamaOdev2
             InitializeComponent();
             BindingContext = this;
 
-            // Initialize Firebase Realtime Database
+          
             firebaseClient = new FirebaseClient("https://gorselproje-a67ec-default-rtdb.europe-west1.firebasedatabase.app/");
 
-            // Load tasks when the page appears
+            
             _ = LoadAndDisplayTasks();
         }
 
@@ -74,7 +74,7 @@ namespace GorselProgramlamaOdev2
             string taskName = taskEntry.Text;
             if (!string.IsNullOrEmpty(taskName))
             {
-                // Show a details entry page to get additional details
+               
                 string details = await DisplayPromptAsync("Task Details", "Enter task details:", initialValue: "");
 
                 TaskItem newTask = new TaskItem

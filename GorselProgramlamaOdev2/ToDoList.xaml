@@ -20,7 +20,7 @@
                             <Label Text="{Binding Details}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" FontSize="16" TextColor="Gray" />
                             <Label Text="{Binding FormattedDateTime}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" FontSize="14" TextColor="Gray" />
                             <StackLayout Orientation="Horizontal" Spacing="15">
-                                <!-- Add other controls as needed -->
+                            
                                 <ImageButton Source="edit2.png" Clicked="OnEditClicked" CommandParameter="{Binding .}" />
                                 <ImageButton Source="close.png" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" />
                             </StackLayout>
